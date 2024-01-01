@@ -484,10 +484,14 @@ body {
   line-height: 64px;
   /* 100% */
 }
-.main-focus__leftside .main-focus__rightside-number, .main-focus__leftside .main-focus__leftside-number, .main-focus__rightside .main-focus__rightside-number, .main-focus__rightside .main-focus__leftside-number {
+.main-focus__leftside .main-focus__rightside-number,
+.main-focus__leftside .main-focus__leftside-number, .main-focus__rightside .main-focus__rightside-number,
+.main-focus__rightside .main-focus__leftside-number {
   width: 30%;
 }
-.main-focus__leftside .main-focus__rightside-text, .main-focus__leftside .main-focus__leftside-text, .main-focus__rightside .main-focus__rightside-text, .main-focus__rightside .main-focus__leftside-text {
+.main-focus__leftside .main-focus__rightside-text,
+.main-focus__leftside .main-focus__leftside-text, .main-focus__rightside .main-focus__rightside-text,
+.main-focus__rightside .main-focus__leftside-text {
   width: 70%;
 }
 .main-focus__leftside {
@@ -594,6 +598,12 @@ body {
   text-transform: uppercase;
   background: var(--Gray-1, #333);
   padding: 20px;
+  max-width: 222px;
+  transition: 0.5s ease;
+}
+.main-projects__about-link-b:hover {
+  background-color: lightskyblue;
+  transform: scale(105%);
 }
 @media (min-width: 992px) {
   .main-projects__about-link-b {
@@ -763,13 +773,16 @@ body {
 .contact-form__field {
   padding: 6px 0;
 }
-.contact-form__field input, .contact-form__field textarea {
+.contact-form__field input,
+.contact-form__field textarea {
   padding: 15px 0px 15px 21px;
   background: #F3F3F3;
   width: 100%;
   border: 0;
 }
-.contact-form__field input:hover, .contact-form__field input:focus, .contact-form__field textarea:hover, .contact-form__field textarea:focus {
+.contact-form__field input:hover, .contact-form__field input:focus,
+.contact-form__field textarea:hover,
+.contact-form__field textarea:focus {
   border: 0;
 }
 .contact-form__label {
@@ -802,7 +815,13 @@ body {
 .contact-form__action {
   background: var(--Gray-1, #333);
   padding: 20px;
+  max-width: 222px;
   margin: 6px 0;
+  transition: 0.5s ease;
+}
+.contact-form__action:hover {
+  background-color: lightskyblue;
+  transform: scale(105%);
 }
 @media (min-width: 576px) {
   .contact-form__action {
@@ -1454,6 +1473,11 @@ body {
   letter-spacing: 2.4px;
   text-transform: uppercase;
   margin: 10px 0;
+  transition: 0.5s ease;
+}
+.main-information__button:hover {
+  background-color: lightskyblue;
+  transform: scale(105%);
 }
 .main-information__button-link {
   height: 71px;

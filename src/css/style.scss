@@ -46,7 +46,7 @@ body {
 }
 
 .header-left-side {
-    & > a {
+    &>a {
         display: flex;
     }
 
@@ -159,6 +159,7 @@ body {
         display: flex;
         width: 100%;
         position: relative;
+
         @include media(desktop) {
             width: 65%;
         }
@@ -245,7 +246,7 @@ body {
             flex-direction: column;
             padding-top: 100px;
 
-            & > div {
+            &>div {
                 padding: 15px 0;
             }
         }
@@ -254,6 +255,7 @@ body {
     &__pointers {
         order: 2;
         width: 50%;
+
         @include media(desktop) {
             width: 100%;
             order: 0;
@@ -392,6 +394,7 @@ body {
         @include media(tablet) {
             padding: 10px 0;
         }
+
         @include media(desktop) {
             padding: 20px 0;
         }
@@ -458,11 +461,16 @@ body {
         /* 100% */
     }
 
-    &__leftside, &__rightside {
-        .main-focus__rightside-number, .main-focus__leftside-number {
+    &__leftside,
+    &__rightside {
+
+        .main-focus__rightside-number,
+        .main-focus__leftside-number {
             width: 30%;
         }
-        .main-focus__rightside-text, .main-focus__leftside-text {
+
+        .main-focus__rightside-text,
+        .main-focus__leftside-text {
             width: 70%;
         }
     }
@@ -534,6 +542,7 @@ body {
         @include media(tablet) {
             height: 300px;
         }
+
         @include media(desktop) {
             height: 200px;
         }
@@ -578,9 +587,16 @@ body {
         text-transform: uppercase;
         background: var(--Gray-1, #333);
         padding: 20px;
+        max-width: 222px;
+        transition: 0.5s ease;
 
-        @include media(tablet) {
+        &:hover {
+            background-color: lightskyblue;
+            transform: scale(105%);
         }
+
+        @include media(tablet) {}
+
         @include media(desktop) {
             width: 30%;
             justify-content: start;
@@ -707,7 +723,8 @@ body {
     &__field {
         padding: 6px 0;
 
-        input, textarea {
+        input,
+        textarea {
             padding: 15px 0px 15px 21px;
             background: #F3F3F3;
             width: 100%;
@@ -755,10 +772,19 @@ body {
     &__action {
         background: var(--Gray-1, #333);
         padding: 20px;
+        max-width: 222px;
         margin: 6px 0;
+        transition: 0.5s ease;
+
+        &:hover {
+            background-color: lightskyblue;
+            transform: scale(105%);
+        }
+
         @include media(tablet) {
             width: 30%;
         }
+
         @include media(desktop) {
             width: 100%;
         }
@@ -805,12 +831,13 @@ body {
         @include media(tablet) {
             flex-direction: row;
         }
+
         @include media(desktop) {
             text-align: left;
             align-items: start;
         }
 
-        & > div {
+        &>div {
             padding: 15px;
         }
     }
@@ -829,14 +856,13 @@ body {
         @include media(tablet) {
             width: 50%;
         }
+
         @include media(desktop) {
             width: 24%;
         }
     }
 
-    &__information {
-
-    }
+    &__information {}
 
     &__information-list {}
 
@@ -873,6 +899,7 @@ body {
         @include media(tablet) {
             width: 50%;
         }
+
         @include media(desktop) {
             width: 29%;
         }
@@ -893,7 +920,8 @@ body {
             padding-bottom: 20px;
         }
 
-        &__first-span, &__second-span {
+        &__first-span,
+        &__second-span {
             display: inline-block;
             color: #FFF;
             font-family: Roboto;
@@ -905,8 +933,11 @@ body {
             letter-spacing: 0.42px;
         }
 
-        &__item-first, &__item-second, &__item-third {
+        &__item-first,
+        &__item-second,
+        &__item-third {
             padding-bottom: 10px;
+
             span {
                 color: #FFF;
                 font-family: Roboto;
@@ -941,6 +972,7 @@ body {
         @include media(tablet) {
             width: 100%;
         }
+
         @include media(desktop) {
             width: 32%;
         }
@@ -952,6 +984,7 @@ body {
         justify-content: center;
         gap: 40px;
         padding-top: 26px;
+
         @include media(desktop) {
             justify-content: start;
         }
@@ -1052,15 +1085,18 @@ body {
             max-width: 48%;
             padding-bottom: 10px;
             width: 100%;
+
             @include media(tablet) {
                 max-width: 32%;
             }
+
             @include media(desktop) {
                 max-width: 17%;
             }
         }
 
     }
+
     &__control-wrapper {
         display: flex;
         align-items: center;
@@ -1077,6 +1113,7 @@ body {
         &__list {
             display: flex;
             align-items: center;
+
             @include media(desktop) {
                 padding-left: 30px;
             }
@@ -1153,7 +1190,7 @@ body {
         width: 100%;
         @include container();
 
-        & > * {
+        &>* {
             width: 100%;
             padding: 10px 0;
 
@@ -1368,8 +1405,9 @@ body {
 
     &__contact {
 
-        & > * {
+        &>* {
             padding: 4px 0;
+
             @include media(desktop) {
                 padding: 12px 0;
             }
@@ -1425,6 +1463,12 @@ body {
         letter-spacing: 2.4px;
         text-transform: uppercase;
         margin: 10px 0;
+        transition: 0.5s ease;
+
+        &:hover {
+            background-color: lightskyblue;
+            transform: scale(105%);
+        }
     }
 
     &__button-link {
