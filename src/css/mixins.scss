@@ -1,0 +1,42 @@
+@import "variables";
+
+@mixin media($type) {
+    @if $type == mobile {
+        $mobile-max-width: $mobile-width - 1;
+        @media (max-width: #{$mobile-max-width}px) {
+            @content;
+        }
+    } @else if $type == tablet {
+        @media (min-width: $mobile-width){
+            @content;
+        }
+    } @else if $type == desktop {
+        @media (min-width: $tablet-width) {
+            @content;
+        }
+    } @else if $type == desktop-big {
+        @media (min-width: $desktop-width) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin container() {
+    max-width: $container-mobile;
+    width: 100%;
+    padding-left:15px;
+    padding-right:15px;
+    @include media(tablet) {
+        max-width: $container-tablet;
+    }
+    @include media(desktop) {
+        max-width: $container-desktop;
+    }
+    @include media(desktop-big) {
+        max-width: $container-desktop-big;
+    }
+}
+
