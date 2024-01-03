@@ -208,13 +208,6 @@ body {
         }
     }
 
-
-
-
-
-
-    &__title {}
-
     &__title-grey {
         color: var(--Gray-4, #BDBDBD);
         font-family: Roboto;
@@ -262,9 +255,6 @@ body {
         }
     }
 
-
-    &__pointers-panel {}
-
     &__pointers-list {
         display: flex;
     }
@@ -298,15 +288,9 @@ body {
             width: 100%;
         }
 
-
-        /* 100% */
-        &_left {}
-
         &_middle {
             margin: 0px 32px;
         }
-
-        &_right {}
     }
 }
 
@@ -850,8 +834,6 @@ body {
         }
     }
 
-    &__logo-img {}
-
     &__container {
         @include media(tablet) {
             width: 50%;
@@ -861,10 +843,6 @@ body {
             width: 24%;
         }
     }
-
-    &__information {}
-
-    &__information-list {}
 
     .information {
 
@@ -905,8 +883,6 @@ body {
         }
 
     }
-
-    &__contacts-list {}
 
     .contacts {
 
@@ -1181,8 +1157,6 @@ body {
     display: flex;
     justify-content: center;
 
-    &__title {}
-
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -1297,21 +1271,15 @@ body {
     }
 
     .slide-numbers {
-        &__left {}
-
         &__middle {
             padding: 0 12px;
         }
-
-        &__right {}
     }
 
     &__control-wrapper {
         display: flex;
         align-items: center;
     }
-
-    &__pointers-panel {}
 
     &__pointers {
         margin-left: 15px;
@@ -1487,12 +1455,6 @@ body {
 
 .title-text {
 
-    &__black {}
-}
-
-
-.title-text {
-
     &__black {
         color: var(--Gray-1, #333);
         font-family: Roboto;
@@ -1585,10 +1547,6 @@ body {
         margin-bottom: 26px;
     }
 
-    &__form {}
-
-    &__form-group {}
-
     &__input {
         background: #F3F3F3;
         width: 391px;
@@ -1598,8 +1556,6 @@ body {
         padding: 15px 21px;
         margin-left: 39px;
     }
-
-    &__form-group--required {}
 
     &__textarea {
         width: 391px;
@@ -1614,10 +1570,6 @@ body {
         margin-left: 39px;
         margin-top: 15px
     }
-
-    &__checkbox {}
-
-    &__label {}
 
     &__label--checkbox {
         color: #333;
@@ -1728,9 +1680,5 @@ body {
             text-decoration: none;
             color: #fff;
         }
-    }
-
-    &__submit-button {
-        /* Стилі для кнопки відправлення в попередньому модальному вікні */
     }
 }
